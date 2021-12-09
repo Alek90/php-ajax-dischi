@@ -87,26 +87,39 @@ $response = [
 </head>
 <body>
 
-    <?php foreach ($response as $disc) : ?> 
 
-        
-        <div class="disc">
+    <header id="header_site">
 
-            <img src= <?php echo $disc[poster] ?> alt= <?php $disc[title]. ' cover' ?>>
+        <img class="logo" src="https://www.wallpapertip.com/wmimgs/17-176153_download-logo-spotify-png.png" alt="logo Spotify">
 
-            <h5><?php echo $disc[title] ?></h5>
+    </header>
 
-            <div class="info">
 
-                <div class="author"><?php echo $disc[author] ?></div>
-                <div class="year"><?php echo $disc[year] ?></div>
-                
+    <main>
+
+        <?php foreach ($response as $disc) : ?> 
+    
+            
+            <div class="disc">
+    
+                <img src= <?php echo $disc[poster] ?> alt= <?php $disc[title]. ' cover' ?>>
+    
+                <h5><?php echo $disc[title] ?></h5>
+    
+                <div class="info">
+    
+                    <div class="author"><?php echo $disc[author] ?></div>
+                    <div class="year"><?php echo $disc[year] ?></div>
+                    
+                </div>
+    
             </div>
+    
+    
+        <?php endforeach; ?>
 
-        </div>
+    </main>
 
-
-    <?php endforeach; ?>
 
     
 </body>
