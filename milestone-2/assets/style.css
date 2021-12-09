@@ -1,0 +1,54 @@
+:root{
+    --brand-color-logo: rgb(30, 215, 96);
+    --mid-dark-bg: rgb(46, 58, 70);
+    --main-bg: rgb(30, 45, 59);
+    --text-grey: rgb(128, 128, 128)
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 75px;
+    background-color: var(--mid-dark-bg);
+}
+
+header .logo{
+    width: 45px;
+    margin: 15px
+}
+
+
+/* MAIN */
+
+main{
+    padding: 100px 0;
+    background-color: var(--main-bg);
+}
+
+.disc{
+    background-color: var(--mid-dark-bg);
+    height: 100%;
+
+}
+
+.disc img{
+    width: 100%;
+}
+
+.info{
+    color: var(--text-grey);
+}
+
+.author{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
