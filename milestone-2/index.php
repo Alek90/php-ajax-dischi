@@ -11,43 +11,48 @@
 <body>
 
 
-    <header id="header_site">
+    <div id="app">
 
-        <img class="logo" src="https://www.wallpapertip.com/wmimgs/17-176153_download-logo-spotify-png.png" alt="logo Spotify">
-
-    </header>
-
-
-    <main>
-
-
-        <div class="row mx-4 gy-4 gx-5 justify-content-center">
-
-
-            <div class="col-2" v-for= "disc in discs">
-
-                <div class="disc p-4 text-center">
-                
-                    <img :src="disc.poster"  alt= '' >
-
-                    <h5 class="text-white my-4"> {{disc.title}} </h5>
-
-                    <div class="info">
-
-                        <div class="author"> {{disc.author}} </div>
-                        <div class="year"> {{disc.year}} </div>
-                        
+        <header id="header_site">
+    
+            <img class="logo" src="https://www.wallpapertip.com/wmimgs/17-176153_download-logo-spotify-png.png" alt="logo Spotify">
+    
+        </header>
+    
+    
+        <main>
+    
+    
+            <div class="row mx-4 gy-4 gx-5 justify-content-center">
+    
+    
+                <div class="col-2" v-for= "disc in discs">
+    
+                    <div class="disc p-4 text-center">
+                    
+                        <img :src="disc.poster"  alt= '' >
+    
+                        <h5 class="text-white my-4"> {{disc.title}} </h5>
+    
+                        <div class="info">
+    
+                            <div class="author"> {{disc.author}} </div>
+                            <div class="year"> {{disc.year}} </div>
+                            
+                        </div>
+    
                     </div>
-
+    
                 </div>
-
+    
+    
             </div>
+    
+    
+        </main>
+        
+    </div>
 
-
-        </div>
-
-
-    </main>
 
 
 
