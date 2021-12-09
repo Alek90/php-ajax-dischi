@@ -85,6 +85,7 @@ $response = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 
@@ -98,26 +99,36 @@ $response = [
 
     <main>
 
-        <?php foreach ($response as $disc) : ?> 
-    
+
+        <div class="row mx-4 gy-4 gx-5 justify-content-center">
+
             
-            <div class="disc">
-    
-                <img src= <?php echo $disc[poster] ?> alt= <?php $disc[title]. ' cover' ?>>
-    
-                <h5><?php echo $disc[title] ?></h5>
-    
-                <div class="info">
-    
-                    <div class="author"><?php echo $disc[author] ?></div>
-                    <div class="year"><?php echo $disc[year] ?></div>
+            <?php foreach ($response as $disc) : ?> 
+                
+                <div class="col-2">
                     
+                    <div class="disc p-4 text-center">
+            
+                        <img src= <?php echo $disc[poster] ?> alt= <?php $disc[title]. ' cover' ?>>
+            
+                        <h5 class="text-white my-4"><?php echo $disc[title] ?></h5>
+            
+                        <div class="info">
+            
+                            <div class="author"><?php echo $disc[author] ?></div>
+                            <div class="year"><?php echo $disc[year] ?></div>
+                            
+                        </div>
+            
+                    </div>
+            
                 </div>
-    
-            </div>
-    
-    
-        <?php endforeach; ?>
+            
+            <?php endforeach; ?>
+
+
+        </div>
+
 
     </main>
 
